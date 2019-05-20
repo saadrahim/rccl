@@ -21,7 +21,7 @@ option(BUILD_TESTS "Build test programs" ON)
 
 # In order to support function calls within the kernel, we must use hcc as the
 # compiler
-set(CMAKE_CXX_COMPILER "/opt/rocm/bin/hcc")
+set(CMAKE_CXX_COMPILER "/opt/rocm/bin/hcc" CACHE PATH "")
 
 # parse version from Makefile NCCL_MAJOR, NCCL_MINOR, NCCL_PATCH must exist
 # NCCL_SUFFIX is optional NCCL_VERSION formatting is ((X) * 1000 + (Y) * 100 +
